@@ -353,7 +353,6 @@ object-fit: cover;
             left: 0;
             right: 0;
             bottom: 0;
-            background: url(images/IMG_7818.mp4);
             background-size: cover;
             opacity: 0.8;
         }
