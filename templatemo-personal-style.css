@@ -318,13 +318,30 @@
             transform: scale(1.05);
         }
 
+        #myVideo {
+position: fixed;
+
+right: 0;
+
+bottom: 0;
+
+min-width: 100%;
+
+min-height: 100%;
+
+z-index: -1;
+
+object-fit: cover;
+
+}
+
         /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--gradient-elegant);
+            background-color: #0100552a;
             position: relative;
             overflow: hidden;
         }
@@ -336,7 +353,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url(images/ChatGPT\ Image\ 5\ ago\ 2025\,\ 09_49_08\ a.m.\ copia.png);
+            background: url(images/IMG_7818.mp4);
             background-size: cover;
             opacity: 0.8;
         }
