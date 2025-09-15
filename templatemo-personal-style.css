@@ -591,8 +591,52 @@ object-fit: cover;
 
         .about-image {
             width: 100%;
-            height: 500px;
+            height: 700px;
             background: url('images/smiling-girl-computer-desktop.jpg') center/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+         .about2-image {
+            width: 100%;
+            height: 500px;
+            background: url('images/20ee3caa-c9a4-40c0-a50f-6385228db6ee.jfif') center/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+         .about3-image {
+            width: 90%;
+            height: 500px;
+            background: url('images/69d90a2d-5264-4a57-8701-e65cb0a325e9.jfif') top/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+          .about4-image {
+            width: 100%;
+            height: 600px;
+            background: url('images/996e97c3-ec2b-46b8-a7f6-251977b47563.jfif') top/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+          .about5-image {
+            width: 100%;
+            height: 600px;
+            background: url('images/fa8937f5-7f26-4dcf-839d-a1479279ad63.jfif') top/cover;
             border-radius: 30px;
             position: relative;
             overflow: hidden;
@@ -699,7 +743,7 @@ object-fit: cover;
 
         .portfolio-image {
             width: 100%;
-            height: 180px;
+            height: 400px;
             background: var(--gradient-primary);
             position: relative;
             overflow: hidden;
