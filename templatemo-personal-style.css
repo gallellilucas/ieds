@@ -542,7 +542,6 @@ object-fit: cover;
             text-align: center;
             font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
             font-size: 3.5rem;
-            font-weight: 600;
             margin-bottom: 4rem;
             background: var(--gradient-elegant);
             -webkit-background-clip: text;
@@ -580,6 +579,9 @@ object-fit: cover;
             background: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
         }
 
+
+        
+
         .about-content {
             display: grid;
 
@@ -592,7 +594,7 @@ object-fit: cover;
         .about-image {
             width: 100%;
             height: 700px;
-            background: url('images/smiling-girl-computer-desktop.jpg') center/cover;
+            background: url('images/pint.jfif') center/cover;
             border-radius: 30px;
             position: relative;
             overflow: hidden;
@@ -644,8 +646,51 @@ object-fit: cover;
             transform: rotate(-2deg);
             transition: transform 0.4s ease;
         }
-
-        .about-image:hover {
+            .about6-image {
+            width: 100%;
+            height: 600px;
+            background: url('images/primariadet.png') top/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+            .about7-image {
+            width: 100%;
+            height: 600px;
+            background: url('images/guarderia.jpg') top/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+               .about8-image {
+            width: 100%;
+            height: 600px;
+            background: url('images/guarderia.jpg') top/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+        .about9-image {
+            width: 100%;
+            height: 600px;
+            background: url('images/smiling-girl-computer-desktop.jpg') top/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+        .about-image:hover ,.about2-image:hover, .about3-image:hover, .about4-image:hover, .about5-image:hover, .about6-image:hover, .about7-image:hover, .about8-image:hover{
             transform: rotate(0deg) scale(1.02);
         }
 
@@ -831,7 +876,7 @@ object-fit: cover;
 
         /* Contact Section */
         .contact {
-            background: linear-gradient(135deg, #010055 0%, #24337D 50%, #010055 100%);
+            background-color: #010055;
             color: var(--text-light);
             position: relative;
             overflow: hidden;
@@ -851,77 +896,7 @@ object-fit: cover;
             animation: contactPulse 6s ease-in-out infinite alternate;
         }
 
-        /* Contact Floating Shapes */
-        .contact-floating-shapes {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .contact-shape {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 50%;
-        }
-
-        .contact-shape-1 {
-            width: 70px;
-            height: 70px;
-            top: 15%;
-            left: 8%;
-            animation: contactFloatShape1 24s ease-in-out infinite;
-        }
-
-        .contact-shape-2 {
-            width: 110px;
-            height: 110px;
-            top: 65%;
-            right: 12%;
-            background: rgba(255, 255, 255, 0.06);
-            animation: contactFloatShape2 28s ease-in-out infinite reverse;
-        }
-
-        .contact-shape-3 {
-            width: 55px;
-            height: 55px;
-            top: 25%;
-            right: 30%;
-            background: rgba(255, 255, 255, 0.1);
-            animation: contactFloatShape3 20s ease-in-out infinite;
-        }
-
-        .contact-shape-4 {
-            width: 90px;
-            height: 90px;
-            bottom: 20%;
-            left: 18%;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 25px;
-            animation: contactFloatShape4 26s ease-in-out infinite;
-        }
-
-        .contact-shape-5 {
-            width: 35px;
-            height: 35px;
-            top: 12%;
-            right: 45%;
-            background: rgba(255, 255, 255, 0.12);
-            animation: contactFloatShape5 18s ease-in-out infinite reverse;
-        }
-
-        .contact-shape-6 {
-            width: 130px;
-            height: 130px;
-            bottom: 12%;
-            right: 8%;
-            background: rgba(255, 255, 255, 0.04);
-            border-radius: 35px;
-            animation: contactFloatShape6 32s ease-in-out infinite;
-        }
+       
 
         @keyframes contactFloatShape1 {
             0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
@@ -1061,6 +1036,27 @@ object-fit: cover;
             box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
         }
 
+        .submite-btn {
+            padding: 0.6rem 1.2rem;
+            background: var(--gradient-secondary);
+            color: var(--text-light);
+            border: 0px;
+            border-radius: 35px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+           transform: translateY(30px);
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.8s forwards;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+
+        }
+
+        .submite-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+        }
         /* Animation Classes */
         .fade-in {
             opacity: 0;
